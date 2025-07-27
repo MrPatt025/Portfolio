@@ -1,42 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Professional Portfolio Design System */
 
 @layer base {
   :root {
+    /* Core Colors - Deep Tech Theme */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 223 47% 11%;
+    
+    /* Cards & Surfaces */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --card-foreground: 223 47% 11%;
+    --card-hover: 214 32% 96%;
+    
+    /* Primary - Tech Blue */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 221 83% 65%;
+    --primary-dark: 221 83% 43%;
+    
+    /* Secondary - Slate */
+    --secondary: 215 20% 96%;
+    --secondary-foreground: 223 47% 11%;
+    
+    /* Accent - Electric Cyan */
+    --accent: 189 94% 57%;
+    --accent-foreground: 223 47% 11%;
+    --accent-glow: 189 94% 70%;
+    
+    /* Muted Tones */
+    --muted: 215 20% 96%;
+    --muted-foreground: 215 16% 47%;
+    
+    /* Status Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    
+    /* Borders & Inputs */
+    --border: 215 20% 89%;
+    --input: 215 20% 89%;
+    --ring: 221 83% 53%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%), hsl(189 94% 57%));
+    --gradient-hero: linear-gradient(135deg, hsl(221 83% 53% / 0.1), hsl(189 94% 57% / 0.1));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(215 20% 98%));
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px hsl(223 47% 11% / 0.05);
+    --shadow-md: 0 4px 6px hsl(223 47% 11% / 0.07), 0 2px 4px hsl(223 47% 11% / 0.06);
+    --shadow-lg: 0 10px 15px hsl(223 47% 11% / 0.1), 0 4px 6px hsl(223 47% 11% / 0.05);
+    --shadow-glow: 0 0 30px hsl(221 83% 53% / 0.3);
+    --shadow-accent: 0 0 30px hsl(189 94% 57% / 0.3);
+    
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +81,46 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    /* Dark Mode - Cyberpunk Tech Theme */
+    --background: 223 47% 6%;
+    --foreground: 215 20% 95%;
+    
+    /* Cards & Surfaces */
+    --card: 223 47% 8%;
+    --card-foreground: 215 20% 95%;
+    --card-hover: 223 47% 12%;
+    
+    /* Primary - Bright Tech Blue */
+    --primary: 221 83% 65%;
+    --primary-foreground: 223 47% 6%;
+    --primary-glow: 221 83% 75%;
+    --primary-dark: 221 83% 55%;
+    
+    /* Secondary - Dark Slate */
+    --secondary: 223 47% 12%;
+    --secondary-foreground: 215 20% 95%;
+    
+    /* Accent - Electric Cyan */
+    --accent: 189 94% 65%;
+    --accent-foreground: 223 47% 6%;
+    --accent-glow: 189 94% 80%;
+    
+    /* Muted Tones */
+    --muted: 223 47% 12%;
+    --muted-foreground: 215 20% 65%;
+    
+    /* Status Colors */
+    --destructive: 0 84% 70%;
+    --destructive-foreground: 223 47% 6%;
+    --success: 142 71% 55%;
+    --success-foreground: 223 47% 6%;
+    --warning: 38 92% 60%;
+    --warning-foreground: 223 47% 6%;
+    
+    /* Borders & Inputs */
+    --border: 223 47% 15%;
+    --input: 223 47% 15%;
+    --ring: 221 83% 65%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +138,115 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+  }
+}
+
+@layer components {
+  /* Hero Button Variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground;
+    @apply px-8 py-3 rounded-xl font-semibold;
+    @apply shadow-lg hover:shadow-glow transition-all duration-300;
+    @apply hover:scale-105 hover:shadow-lg;
+  }
+  
+  .btn-outline-hero {
+    @apply border-2 border-primary text-primary bg-transparent;
+    @apply px-8 py-3 rounded-xl font-semibold;
+    @apply hover:bg-primary hover:text-primary-foreground;
+    @apply transition-all duration-300 hover:scale-105;
+  }
+  
+  /* Section Animations */
+  .section-fade-in {
+    @apply opacity-0 translate-y-8;
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  /* Glow Effects */
+  .glow-primary {
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.3);
+  }
+  
+  .glow-accent {
+    box-shadow: 0 0 30px hsl(var(--accent) / 0.3);
+  }
+  
+  /* Gradient Text */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Card Hover Effects */
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-105;
+    @apply hover:shadow-lg hover:bg-card-hover;
+  }
+  
+  /* Skill Bar Animation */
+  .skill-bar {
+    @apply bg-muted rounded-full h-2 overflow-hidden;
+  }
+  
+  .skill-progress {
+    @apply h-full bg-gradient-to-r from-primary to-accent;
+    @apply transition-all duration-1000 ease-out;
+    animation: progressFill 2s ease-out forwards;
+  }
+}
+
+@layer utilities {
+  /* Custom Animations */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes progressFill {
+    from {
+      width: 0%;
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Scroll Animations */
+  @media (prefers-reduced-motion: no-preference) {
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.6s ease-out;
+    }
+    
+    .scroll-reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
