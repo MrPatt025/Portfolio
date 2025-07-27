@@ -28,7 +28,7 @@ const Hero = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-5xl md:text-7xl font-bold mb-6"
           >
-            <span className="gradient-text">Alex Chen</span>
+            <span className="gradient-text">Mr.Patt025</span>
           </motion.h1>
           
           <motion.p 
@@ -46,7 +46,7 @@ const Hero = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-lg md:text-xl text-foreground/80 mb-8"
           >
-            AI/ML Explorer • Edge Computing Enthusiast • Future Tech Innovator
+            AI & Full Stack Developer • นักคิดนอกกรอบ • Problem Solver
           </motion.p>
           
           {/* Tagline */}
@@ -56,8 +56,8 @@ const Hero = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto"
           >
-            Building the future with code, one algorithm at a time. 
-            Passionate about creating intelligent systems that make a difference.
+            สร้างอนาคตด้วยโค้ด ด้วยความคิดสร้างสรรค์และการทำงานเป็นระบบ 
+            พร้อมสร้างผลกระทบที่มีความหมายผ่านเทคโนโลยี
           </motion.p>
           
           {/* Action Buttons */}

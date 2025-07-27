@@ -5,50 +5,50 @@ import { Progress } from "@/components/ui/progress"
 
 const Skills = () => {
   const technicalSkills = [
-    { name: "Python", level: 90, category: "language" },
-    { name: "JavaScript/TypeScript", level: 85, category: "language" },
-    { name: "Java", level: 80, category: "language" },
-    { name: "C/C++", level: 75, category: "language" },
-    { name: "HTML/CSS", level: 85, category: "web" },
-    { name: "React/Next.js", level: 80, category: "web" },
-    { name: "Node.js", level: 75, category: "backend" },
-    { name: "TensorFlow/PyTorch", level: 70, category: "ai" },
-    { name: "Docker", level: 65, category: "devops" },
-    { name: "Git/GitHub", level: 85, category: "tools" }
+    { name: "Python", level: 95, category: "language" },
+    { name: "C++", level: 85, category: "language" },
+    { name: "AI/Machine Learning", level: 80, category: "ai" },
+    { name: "Web Development", level: 85, category: "web" },
+    { name: "GitHub", level: 90, category: "tools" },
+    { name: "Docker", level: 75, category: "devops" },
+    { name: "VS Code", level: 90, category: "tools" },
+    { name: "ChatGPT Integration", level: 85, category: "ai" },
+    { name: "Problem Solving", level: 95, category: "core" },
+    { name: "System Design", level: 80, category: "architecture" }
   ]
 
   const domains = [
     {
       title: "AI & Machine Learning",
-      technologies: ["TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "Jupyter"],
-      description: "Deep learning, neural networks, computer vision, NLP"
-    },
-    {
-      title: "Edge Computing",
-      technologies: ["Raspberry Pi", "Arduino", "ARM Cortex", "NVIDIA Jetson", "FreeRTOS"],
-      description: "Embedded systems, IoT, real-time computing, optimization"
+      technologies: ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "ChatGPT"],
+      description: "สร้างโมเดล AI และระบบเรียนรู้ที่ชาญฉลาด"
     },
     {
       title: "Web Development",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Node.js", "PostgreSQL"],
-      description: "Full-stack development, responsive design, modern frameworks"
+      technologies: ["React", "JavaScript", "HTML/CSS", "Node.js", "Full Stack"],
+      description: "พัฒนาเว็บแอปพลิเคชันแบบ Full Stack"
     },
     {
-      title: "DevOps & Tools",
-      technologies: ["Git", "Docker", "VS Code", "Linux", "AWS", "GitHub Actions"],
-      description: "Version control, containerization, cloud services, CI/CD"
+      title: "System Programming",
+      technologies: ["C++", "Python", "Docker", "Linux", "System Design"],
+      description: "เขียนโปรแกรมระดับต่ำและระบบประสิทธิภาพสูง"
+    },
+    {
+      title: "Development Tools",
+      technologies: ["VS Code", "GitHub", "Docker", "ChatGPT", "Git"],
+      description: "เครื่องมือพัฒนาสมัยใหม่สำหรับการทำงานเป็นทีม"
     }
   ]
 
   const softSkills = [
-    "Problem Solving",
-    "Critical Thinking",
-    "Team Collaboration",
-    "Project Management",
-    "Technical Communication",
-    "Continuous Learning",
-    "Leadership",
-    "Adaptability"
+    "คิดนอกกรอบ",
+    "ชอบแก้ปัญหา",
+    "ทำงานเป็นระบบ",
+    "เข้าสังคมได้ง่าย",
+    "การทำงานเป็นทีม",
+    "สื่อสารได้ดี",
+    "เรียนรู้อย่างต่อเนื่อง",
+    "ปรับตัวได้ดี"
   ]
 
   return (

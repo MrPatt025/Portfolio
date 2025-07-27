@@ -11,25 +11,25 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "alex.chen@email.com",
-      link: "mailto:alex.chen@email.com"
+      value: "mrpatt025@email.com",
+      link: "mailto:mrpatt025@email.com"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/alexchen",
-      link: "https://linkedin.com/in/alexchen"
+      value: "linkedin.com/in/mrpatt025",
+      link: "https://linkedin.com/in/mrpatt025"
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/alexchen",
-      link: "https://github.com/alexchen"
+      value: "github.com/mrpatt025",
+      link: "https://github.com/mrpatt025"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco Bay Area",
+      value: "Thailand",
       link: null
     }
   ]
@@ -63,12 +63,11 @@ const Contact = () => {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
+              <h3 className="text-2xl font-semibold mb-6">ติดต่อผม</h3>
               <p className="text-muted-foreground mb-8">
-                I'm actively seeking internship and full-time opportunities in AI, 
-                edge computing, and innovative tech companies. Whether you have a 
-                challenging project or just want to discuss the latest in tech, 
-                I'd love to hear from you.
+                ผมกำลังมองหาโอกาสในการฝึกงานและทำงานเต็มเวลาในสาย Software Engineer, 
+                AI Engineer และ Full Stack Developer หากคุณมีโปรเจกต์ที่น่าสนใจหรือ
+                ต้องการคุยเกี่ยวกับเทคโนโลยี ผมยินดีที่จะรับฟัง
               </p>
             </div>
 
@@ -112,24 +111,24 @@ const Contact = () => {
               viewport={{ once: true }}
               className="space-y-4 pt-8"
             >
-              <h4 className="text-lg font-semibold">Quick Actions</h4>
+              <h4 className="text-lg font-semibold">ติดต่อด่วน</h4>
               <div className="space-y-3">
                 <Button variant="outline" className="w-full justify-start" asChild>
-                  <a href="mailto:alex.chen@email.com?subject=Internship Opportunity">
+                  <a href="mailto:mrpatt025@email.com?subject=โอกาสการทำงาน">
                     <Mail className="mr-2 h-4 w-4" />
-                    Send Email
+                    ส่งอีเมล
                   </a>
                 </Button>
                 <Button variant="outline" className="w-full justify-start" asChild>
                   <a href="#" target="_blank" rel="noopener noreferrer">
                     <Calendar className="mr-2 h-4 w-4" />
-                    Schedule Meeting
+                    นัดหมายคุยงาน
                   </a>
                 </Button>
                 <Button variant="outline" className="w-full justify-start" asChild>
                   <a href="#" target="_blank" rel="noopener noreferrer">
                     <Phone className="mr-2 h-4 w-4" />
-                    Video Call
+                    วิดีโอคอล
                   </a>
                 </Button>
               </div>
@@ -145,69 +144,69 @@ const Contact = () => {
           >
             <Card>
               <CardHeader>
-                <CardTitle>Send a Message</CardTitle>
+                <CardTitle>ส่งข้อความหาผม</CardTitle>
               </CardHeader>
               <CardContent>
                 <form className="space-y-6">
-                  <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="firstName">First Name</Label>
+                      <Label htmlFor="firstName">ชื่อ</Label>
                       <Input 
                         id="firstName" 
-                        placeholder="John" 
+                        placeholder="ชื่อจริง" 
                         className="transition-all focus:scale-[1.02]"
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="lastName">Last Name</Label>
+                      <Label htmlFor="lastName">นามสกุล</Label>
                       <Input 
                         id="lastName" 
-                        placeholder="Doe" 
+                        placeholder="นามสกุล" 
                         className="transition-all focus:scale-[1.02]"
                       />
                     </div>
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
+                    <Label htmlFor="email">อีเมล</Label>
                     <Input 
                       id="email" 
                       type="email" 
-                      placeholder="john@company.com"
+                      placeholder="your.email@company.com"
                       className="transition-all focus:scale-[1.02]"
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="company">Company/Organization</Label>
+                    <Label htmlFor="company">บริษัท/องค์กร</Label>
                     <Input 
                       id="company" 
-                      placeholder="Tech Company Inc."
+                      placeholder="บริษัทของคุณ"
                       className="transition-all focus:scale-[1.02]"
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="subject">Subject</Label>
+                    <Label htmlFor="subject">หัวข้อ</Label>
                     <Input 
                       id="subject" 
-                      placeholder="Internship Opportunity / Project Collaboration"
+                      placeholder="โอกาสการทำงาน / ความร่วมมือในโปรเจกต์"
                       className="transition-all focus:scale-[1.02]"
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
+                    <Label htmlFor="message">ข้อความ</Label>
                     <Textarea 
                       id="message" 
-                      placeholder="Tell me about your project, internship opportunity, or how we can collaborate..."
+                      placeholder="บอกผมเกี่ยวกับโปรเจกต์ โอกาสการฝึกงาน หรือความร่วมมือที่คุณสนใจ..."
                       className="min-h-[120px] transition-all focus:scale-[1.02]"
                     />
                   </div>
                   
                   <Button type="submit" className="w-full btn-hero">
                     <Send className="mr-2 h-4 w-4" />
-                    Send Message
+                    ส่งข้อความ
                   </Button>
                 </form>
               </CardContent>
@@ -224,21 +223,21 @@ const Contact = () => {
           className="text-center mt-16 p-8 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl"
         >
           <h3 className="text-2xl font-semibold mb-4">
-            Ready to build something amazing together?
+            พร้อมทำงานร่วมกัน?
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            I'm always excited to discuss new opportunities, innovative projects, 
-            and ways to push the boundaries of what's possible with technology.
+            ผมพร้อมที่จะร่วมงานในโปรเจกต์ที่น่าสนใจ เรียนรู้จากทีมมืออาชีพ 
+            และสร้างสรรค์สิ่งใหม่ ๆ ด้วยกัน มาสร้างผลงานที่น่าตื่นตาตื่นใจกันเถอะ!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="btn-hero" asChild>
-              <a href="mailto:alex.chen@email.com?subject=Let's Collaborate">
-                Start the Conversation
+              <a href="mailto:mrpatt025@email.com?subject=มาร่วมงานกัน">
+                เริ่มคุยงานกันเลย
               </a>
             </Button>
             <Button variant="outline" size="lg" asChild>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                Download Resume
+                ดาวน์โหลด Resume
               </a>
             </Button>
           </div>

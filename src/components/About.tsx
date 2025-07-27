@@ -5,34 +5,34 @@ import { Card, CardContent } from "@/components/ui/card"
 const About = () => {
   const values = [
     {
-      icon: Brain,
-      title: "Curious Mind",
-      description: "Always asking 'what if?' and diving deep into complex problems"
-    },
-    {
-      icon: Code2,
-      title: "Clean Code",
-      description: "Writing maintainable, efficient code that tells a story"
-    },
-    {
-      icon: Zap,
-      title: "Fast Learner",
-      description: "Adapting quickly to new technologies and methodologies"
+      icon: Lightbulb,
+      title: "คิดนอกกรอบ",
+      description: "มองหาวิธีแก้ปัญหาที่แปลกใหม่และสร้างสรรค์ เพื่อสร้างโซลูชันที่ไม่เหมือนใคร"
     },
     {
       icon: Target,
-      title: "Goal-Oriented",
-      description: "Focused on delivering impactful solutions that matter"
+      title: "ชอบแก้ปัญหา",
+      description: "เพลิดเพลินกับการวิเคราะห์และแก้ไขปัญหาที่ซับซ้อน ด้วยความเป็นระบบ"
+    },
+    {
+      icon: Brain,
+      title: "เข้าสังคมได้ง่าย",
+      description: "สามารถทำงานร่วมกับทีมได้ดี สื่อสารได้ชัดเจน และสร้างบรรยากาศการทำงานที่ดี"
+    },
+    {
+      icon: Zap,
+      title: "ทำงานเป็นระบบ",
+      description: "วางแผนและดำเนินงานอย่างมีระเบียบ เน้นประสิทธิภาพและความเสถียร"
+    },
+    {
+      icon: Code2,
+      title: "การทำงานเป็นทีม",
+      description: "ร่วมมือกับผู้อื่นได้ดี แบ่งปันความรู้ และสนับสนุนเพื่อนร่วมงาน"
     },
     {
       icon: Heart,
-      title: "Team Player",
-      description: "Collaborating effectively and lifting others up"
-    },
-    {
-      icon: Lightbulb,
-      title: "Innovator",
-      description: "Thinking outside the box to solve tomorrow's challenges"
+      title: "สื่อสารได้ดี",
+      description: "ถ่ายทอดไอเดียและแนวคิดเทคนิคได้อย่างเข้าใจง่าย"
     }
   ]
 
@@ -65,35 +65,32 @@ const About = () => {
             className="space-y-6"
           >
             <h3 className="text-2xl md:text-3xl font-semibold mb-6">
-              My Journey in Tech
+              เส้นทางการเรียนรู้
             </h3>
             
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
-                Started coding at 14 with Python, quickly falling in love with the logic and 
-                creativity required to build something from nothing. What began as hobby projects 
-                evolved into a passion for artificial intelligence and edge computing.
+                ผมเป็นนักศึกษาวิศวกรรมคอมพิวเตอร์ที่หลงใหลในโลกของ AI และการพัฒนาซอฟต์แวร์ 
+                ด้วยความคิดที่นอกกรอบและรักในการแก้ปัญหา ทำให้ผมมองเห็นโอกาสในการสร้างโซลูชันที่แปลกใหม่
               </p>
               
               <p>
-                Currently pursuing Computer Engineering with a focus on AI/ML systems. 
-                I'm particularly fascinated by federated learning, privacy-preserving AI, 
-                and how we can bring intelligent computation closer to the edge.
+                จากการเขียนโค้ด Python ครั้งแรก จนถึงการพัฒนา AI และ Web Applications ที่ซับซ้อน 
+                ผมเชื่อมั่นในพลังของเทคโนโลยีที่จะเปลี่ยนแปลงโลก โดยเน้นการทำงานเป็นระบบและมีประสิทธิภาพ
               </p>
               
               <p>
-                When I'm not coding, you'll find me exploring the latest research papers, 
-                contributing to open source projects, or experimenting with embedded systems 
-                in my home lab.
+                ทักษะหลักของผม ได้แก่ Python, C++, AI/ML, และ Full Stack Development 
+                พร้อมกับการใช้เครื่องมือสมัยใหม่อย่าง Docker, GitHub, VS Code และ ChatGPT
               </p>
             </div>
 
             <div className="pt-6">
-              <h4 className="text-xl font-semibold mb-4">Career Vision</h4>
+              <h4 className="text-xl font-semibold mb-4">เป้าหมายในอาชีพ</h4>
               <p className="text-muted-foreground">
-                To work at the intersection of AI research and engineering, developing 
-                systems that are not just intelligent, but also ethical, efficient, 
-                and accessible to everyone.
+                ผมมองหาโอกาสในตำแหน่ง Software Engineer, AI Engineer หรือ Full Stack Developer 
+                ในสภาพแวดล้อมการทำงานที่ยืดหยุ่น (Remote/Hybrid/On-site) เพื่อสร้างผลกระทบที่มีความหมาย 
+                และเรียนรู้จากทีมงานมืออาชีพ
               </p>
             </div>
           </motion.div>

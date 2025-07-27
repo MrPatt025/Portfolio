@@ -7,107 +7,58 @@ import { Button } from "@/components/ui/button"
 const Projects = () => {
   const projects = [
     {
-      title: "FedLearn Edge",
-      description: "Distributed machine learning system enabling privacy-preserving AI training across edge devices. Implemented using PyTorch and custom communication protocols.",
+      title: "OHW-Project",
+      description: "โปรเจกต์หลักที่ผมพัฒนาขึ้น รวมเทคโนโลยี AI และ Web Development เข้าด้วยกัน เป็นระบบที่แก้ปัญหาจริงด้วยการคิดนอกกรอบ ใช้ Python เป็นหลักและมีการบูรณาการ AI/ML",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&h=300&fit=crop&crop=entropy",
-      technologies: ["Python", "PyTorch", "Docker", "gRPC", "Raspberry Pi"],
+      technologies: ["Python", "AI/ML", "Web Development", "GitHub", "Docker"],
       achievements: [
-        "92% accuracy maintained with 10x privacy improvement",
-        "Reduced bandwidth usage by 65%",
-        "Successfully deployed on 5+ edge devices"
+        "ใช้ AI ในการแก้ปัญหาที่ซับซ้อน",
+        "ออกแบบระบบที่ทำงานเป็นระบบ",
+        "พัฒนาด้วยความคิดสร้างสรรค์"
       ],
       links: {
         github: "#",
         demo: "#",
-        paper: "#"
+        paper: ""
       },
       status: "Featured",
-      category: "AI/ML"
+      category: "AI/Web"
     },
     {
-      title: "Neural Architecture Search",
-      description: "Automated neural network design system using evolutionary algorithms. Discovers optimal architectures for specific tasks with minimal human intervention.",
+      title: "AI-Powered Solution System",
+      description: "ระบบแก้ปัญหาอัตโนมัติที่ใช้ Python และ Machine Learning ในการวิเคราะห์และหาทางแก้ไขที่เหมาะสม รองรับการทำงานแบบระบบและมีประสิทธิภาพสูง",
       image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500&h=300&fit=crop&crop=entropy",
-      technologies: ["Python", "TensorFlow", "CUDA", "NumPy", "Matplotlib"],
+      technologies: ["Python", "C++", "AI/ML", "Docker", "VS Code"],
       achievements: [
-        "15% performance improvement over manual designs",
-        "Reduced design time from weeks to hours",
-        "Published in university research symposium"
+        "ลดเวลาการแก้ปัญหา 60%",
+        "ระบบคิดวิเคราะห์อัตโนมัติ",
+        "รองรับการทำงานหลายรูปแบบ"
       ],
       links: {
         github: "#",
-        paper: "#"
+        demo: "",
+        paper: ""
       },
-      status: "Research",
-      category: "AI/ML"
+      status: "In Progress",
+      category: "AI/Automation"
     },
     {
-      title: "SmartHome IoT Hub",
-      description: "Complete IoT ecosystem with edge computing capabilities. Real-time sensor data processing, predictive analytics, and automated decision making.",
+      title: "Smart Development Toolkit",
+      description: "ชุดเครื่องมือพัฒนาซอฟต์แวร์ที่ผมสร้างขึ้นเพื่อเพิ่มประสิทธิภาพการทำงาน รวม VS Code extensions, Docker containers และ GitHub workflows พร้อมการบูรณาการ ChatGPT",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop&crop=entropy",
-      technologies: ["C++", "ESP32", "MQTT", "InfluxDB", "Grafana", "React"],
+      technologies: ["VS Code", "Docker", "GitHub", "ChatGPT", "Web Development"],
       achievements: [
-        "30% energy savings through predictive optimization",
-        "Sub-100ms response times for critical alerts",
-        "Handles 50+ concurrent sensor streams"
+        "เพิ่มประสิทธิภาพการทำงาน 50%",
+        "ลดขั้นตอนการ Deploy",
+        "ระบบทำงานเป็นทีมที่สมบูรณ์"
       ],
       links: {
         github: "#",
-        demo: "#"
+        demo: "#",
+        paper: ""
       },
-      status: "Production",
-      category: "IoT/Embedded"
-    },
-    {
-      title: "CyberShield Analytics",
-      description: "Real-time cybersecurity monitoring dashboard with ML-powered threat detection. Analyzes network traffic patterns to identify potential security breaches.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=500&h=300&fit=crop&crop=entropy",
-      technologies: ["Python", "Scikit-learn", "React", "D3.js", "PostgreSQL"],
-      achievements: [
-        "97% threat detection accuracy",
-        "Real-time processing of 10k+ events/sec",
-        "Reduced false positives by 80%"
-      ],
-      links: {
-        github: "#",
-        demo: "#"
-      },
-      status: "Open Source",
-      category: "Cybersecurity"
-    },
-    {
-      title: "DevOps Pipeline Optimizer",
-      description: "Intelligent CI/CD pipeline that automatically optimizes build times and resource allocation using reinforcement learning algorithms.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop&crop=entropy",
-      technologies: ["Python", "Docker", "Kubernetes", "GitHub Actions", "AWS"],
-      achievements: [
-        "45% reduction in average build times",
-        "30% cost savings on cloud resources",
-        "Zero-downtime deployments achieved"
-      ],
-      links: {
-        github: "#",
-        demo: "#"
-      },
-      status: "In Development",
-      category: "DevOps"
-    },
-    {
-      title: "Quantum-Safe Cryptography",
-      description: "Implementation of post-quantum cryptographic algorithms for securing communications in the quantum computing era.",
-      image: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=500&h=300&fit=crop&crop=entropy",
-      technologies: ["C", "Python", "OpenSSL", "GMP", "Assembly"],
-      achievements: [
-        "NIST-compliant algorithm implementation",
-        "5x faster than reference implementation",
-        "Successfully tested against quantum simulators"
-      ],
-      links: {
-        github: "#",
-        paper: "#"
-      },
-      status: "Research",
-      category: "Cryptography"
+      status: "Completed",
+      category: "Developer Tools"
     }
   ]
 
