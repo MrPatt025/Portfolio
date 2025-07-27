@@ -50,16 +50,17 @@
     --ring: 221 83% 53%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%), hsl(189 94% 57%));
-    --gradient-hero: linear-gradient(135deg, hsl(221 83% 53% / 0.1), hsl(189 94% 57% / 0.1));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(215 20% 98%));
+    --gradient-primary: linear-gradient(135deg, hsl(220 90% 56%), hsl(180 100% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 90% 56% / 0.1), hsl(180 100% 50% / 0.1));
+    --gradient-card: linear-gradient(145deg, hsl(240 15% 12%), hsl(240 10% 8%));
     
-    /* Shadows */
-    --shadow-sm: 0 1px 2px hsl(223 47% 11% / 0.05);
-    --shadow-md: 0 4px 6px hsl(223 47% 11% / 0.07), 0 2px 4px hsl(223 47% 11% / 0.06);
-    --shadow-lg: 0 10px 15px hsl(223 47% 11% / 0.1), 0 4px 6px hsl(223 47% 11% / 0.05);
-    --shadow-glow: 0 0 30px hsl(221 83% 53% / 0.3);
-    --shadow-accent: 0 0 30px hsl(189 94% 57% / 0.3);
+    /* Shadows - Dark Modern */
+    --shadow-sm: 0 1px 2px hsl(240 10% 8% / 0.2);
+    --shadow-md: 0 4px 6px hsl(240 10% 8% / 0.3), 0 2px 4px hsl(240 10% 8% / 0.2);
+    --shadow-lg: 0 10px 15px hsl(240 10% 8% / 0.4), 0 4px 6px hsl(240 10% 8% / 0.3);
+    --shadow-glow: 0 0 40px hsl(220 90% 56% / 0.3);
+    --shadow-accent-glow: 0 0 20px hsl(180 100% 50% / 0.4);
+    --shadow-elegant: 0 10px 30px -10px hsl(240 10% 8% / 0.8);
     
     --radius: 0.75rem;
 
@@ -81,46 +82,46 @@
   }
 
   .dark {
-    /* Dark Mode - Cyberpunk Tech Theme */
-    --background: 223 47% 6%;
-    --foreground: 215 20% 95%;
+    /* Dark-Modern Design System */
+    --background: 240 10% 8%;        /* Rich Black - Surface */
+    --foreground: 0 0% 95%;          /* Near White - Text Primary */
     
     /* Cards & Surfaces */
-    --card: 223 47% 8%;
-    --card-foreground: 215 20% 95%;
-    --card-hover: 223 47% 12%;
+    --card: 240 15% 12%;             /* Deep Charcoal - Secondary */
+    --card-foreground: 0 0% 95%;     /* Near White */
+    --card-hover: 240 15% 15%;       /* Slightly lighter charcoal */
     
-    /* Primary - Bright Tech Blue */
-    --primary: 221 83% 65%;
-    --primary-foreground: 223 47% 6%;
-    --primary-glow: 221 83% 75%;
-    --primary-dark: 221 83% 55%;
+    /* Primary - Electric Blue */
+    --primary: 220 90% 56%;          /* Electric Blue */
+    --primary-foreground: 240 10% 8%; /* Rich Black */
+    --primary-glow: 220 90% 70%;     /* Lighter electric blue */
+    --primary-dark: 220 90% 45%;     /* Darker electric blue */
     
-    /* Secondary - Dark Slate */
-    --secondary: 223 47% 12%;
-    --secondary-foreground: 215 20% 95%;
+    /* Secondary - Deep Charcoal */
+    --secondary: 240 15% 12%;        /* Deep Charcoal */
+    --secondary-foreground: 0 0% 95%; /* Near White */
     
-    /* Accent - Electric Cyan */
-    --accent: 189 94% 65%;
-    --accent-foreground: 223 47% 6%;
-    --accent-glow: 189 94% 80%;
+    /* Accent - Cyan Highlight */
+    --accent: 180 100% 50%;          /* Cyan Highlight */
+    --accent-foreground: 240 10% 8%; /* Rich Black */
+    --accent-glow: 180 100% 70%;     /* Lighter cyan */
     
     /* Muted Tones */
-    --muted: 223 47% 12%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 240 8% 15%;             /* Muted background */
+    --muted-foreground: 220 10% 70%; /* Cool Gray - Text Secondary */
     
     /* Status Colors */
-    --destructive: 0 84% 70%;
-    --destructive-foreground: 223 47% 6%;
-    --success: 142 71% 55%;
-    --success-foreground: 223 47% 6%;
-    --warning: 38 92% 60%;
-    --warning-foreground: 223 47% 6%;
+    --destructive: 0 84% 60%;        /* Red for errors */
+    --destructive-foreground: 0 0% 95%; /* Near White */
+    --success: 142 71% 50%;          /* Green for success */
+    --success-foreground: 0 0% 95%;  /* Near White */
+    --warning: 38 92% 55%;           /* Orange for warnings */
+    --warning-foreground: 0 0% 95%;  /* Near White */
     
     /* Borders & Inputs */
-    --border: 223 47% 15%;
-    --input: 223 47% 15%;
-    --ring: 221 83% 65%;
+    --border: 240 8% 18%;            /* Subtle borders */
+    --input: 240 8% 18%;             /* Input backgrounds */
+    --ring: 220 90% 56%;             /* Electric Blue for focus */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -152,48 +153,95 @@
 }
 
 @layer components {
-  /* Hero Button Variants */
-  .btn-hero {
-    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground;
-    @apply px-8 py-3 rounded-xl font-semibold;
-    @apply shadow-lg hover:shadow-glow transition-all duration-300;
-    @apply hover:scale-105;
+  /* Typography Classes */
+  .text-display {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
   }
   
-  .btn-outline-hero {
-    @apply border-2 border-primary text-primary bg-transparent;
-    @apply px-8 py-3 rounded-xl font-semibold;
-    @apply hover:bg-primary hover:text-primary-foreground;
-    @apply transition-all duration-300 hover:scale-105;
+  .text-h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight;
   }
   
-  /* Section Animations */
-  .section-fade-in {
-    @apply opacity-0 translate-y-8;
-    animation: fadeInUp 0.6s ease-out forwards;
+  .text-h2 {
+    @apply text-2xl md:text-3xl font-semibold tracking-tight;
   }
   
-  /* Glow Effects */
-  .glow-primary {
+  .text-body {
+    @apply text-base leading-relaxed;
+  }
+  
+  .text-caption {
+    @apply text-sm text-muted-foreground;
+  }
+
+  /* Custom Utility Classes */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .glass-effect {
+    @apply bg-card/30 backdrop-blur-md border border-border/50;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+  
+  .hover-glow:hover {
     box-shadow: 0 0 30px hsl(var(--primary) / 0.3);
   }
   
-  .glow-accent {
-    box-shadow: 0 0 30px hsl(var(--accent) / 0.3);
+  .accent-glow:hover {
+    box-shadow: 0 0 20px hsl(var(--accent) / 0.4);
   }
   
-  /* Gradient Text */
-  .gradient-text {
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  
-  /* Card Hover Effects */
   .card-hover {
-    @apply transition-all duration-300 hover:scale-105;
-    @apply hover:shadow-lg hover:bg-card-hover;
+    @apply transition-all duration-300 hover:translate-y-[-2px];
+  }
+  
+  .card-hover:hover {
+    box-shadow: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+  }
+
+  /* Hero Button Variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold;
+    @apply px-8 py-3 rounded-xl shadow-lg transition-all duration-300 hover:scale-105;
+  }
+  
+  .btn-hero:hover {
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.4);
+  }
+  
+  .btn-outline-hero {
+    @apply border-2 border-primary/50 bg-transparent text-primary font-semibold;
+    @apply px-8 py-3 rounded-xl transition-all duration-300 hover:scale-105;
+    @apply hover:bg-primary hover:text-primary-foreground hover:border-primary;
+  }
+  
+  .btn-outline-hero:hover {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+  
+  /* Animation Classes */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  .animate-typing {
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
   }
   
   /* Skill Bar Animation */
@@ -206,47 +254,104 @@
     @apply transition-all duration-1000 ease-out;
     animation: progressFill 2s ease-out forwards;
   }
+  
+  /* Focus Styles for Accessibility */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background;
+  }
 }
 
 @layer utilities {
-  /* Custom Animations */
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  /* Scroll behavior */
+  .scroll-smooth {
+    scroll-behavior: smooth;
   }
   
-  @keyframes progressFill {
-    from {
-      width: 0%;
-    }
+  /* Focus styles for accessibility */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background;
   }
   
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-10px);
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
     }
   }
-  
-  .animate-float {
-    animation: float 3s ease-in-out infinite;
+}
+
+/* Keyframe animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
+  to { box-shadow: 0 0 30px hsl(var(--primary) / 0.6); }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: hsl(var(--accent)); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes progressFill {
+  from { width: 0%; }
+  to { width: var(--progress-width, 0%); }
+}
+
+/* Intersection Observer animations */
+.observe-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.observe-fade.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll Animations */
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
   }
   
-  /* Scroll Animations */
-  @media (prefers-reduced-motion: no-preference) {
-    .scroll-reveal {
-      opacity: 0;
-      transform: translateY(50px);
-      transition: all 0.6s ease-out;
-    }
-    
-    .scroll-reveal.revealed {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  .scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
