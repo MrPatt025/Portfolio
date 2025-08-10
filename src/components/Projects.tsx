@@ -8,13 +8,13 @@ const Projects = () => {
   const projects = [
     {
       title: "OHW-Project",
-      description: "โปรเจกต์หลักที่ผมพัฒนาขึ้น รวมเทคโนโลยี AI และ Web Development เข้าด้วยกัน เป็นระบบที่แก้ปัญหาจริงด้วยการคิดนอกกรอบ ใช้ Python เป็นหลักและมีการบูรณาการ AI/ML",
+      description: "A flagship project that integrates AI and Web Development technologies. This system solves real-world problems through out-of-the-box thinking, primarily using Python with AI/ML integration.",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&h=300&fit=crop&crop=entropy",
       technologies: ["Python", "AI/ML", "Web Development", "GitHub", "Docker"],
       achievements: [
-        "ใช้ AI ในการแก้ปัญหาที่ซับซ้อน",
-        "ออกแบบระบบที่ทำงานเป็นระบบ",
-        "พัฒนาด้วยความคิดสร้างสรรค์"
+        "Applied AI to solve complex problems",
+        "Designed systematic working systems",
+        "Developed with creative thinking"
       ],
       links: {
         github: "#",
@@ -26,13 +26,13 @@ const Projects = () => {
     },
     {
       title: "AI-Powered Solution System",
-      description: "ระบบแก้ปัญหาอัตโนมัติที่ใช้ Python และ Machine Learning ในการวิเคราะห์และหาทางแก้ไขที่เหมาะสม รองรับการทำงานแบบระบบและมีประสิทธิภาพสูง",
+      description: "An automated problem-solving system using Python and Machine Learning for analysis and finding optimal solutions. Supports systematic work approaches with high efficiency.",
       image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500&h=300&fit=crop&crop=entropy",
       technologies: ["Python", "C++", "AI/ML", "Docker", "VS Code"],
       achievements: [
-        "ลดเวลาการแก้ปัญหา 60%",
-        "ระบบคิดวิเคราะห์อัตโนมัติ",
-        "รองรับการทำงานหลายรูปแบบ"
+        "Reduced problem-solving time by 60%",
+        "Automated analytical thinking system",
+        "Supports multiple work formats"
       ],
       links: {
         github: "#",
@@ -44,13 +44,13 @@ const Projects = () => {
     },
     {
       title: "Smart Development Toolkit",
-      description: "ชุดเครื่องมือพัฒนาซอฟต์แวร์ที่ผมสร้างขึ้นเพื่อเพิ่มประสิทธิภาพการทำงาน รวม VS Code extensions, Docker containers และ GitHub workflows พร้อมการบูรณาการ ChatGPT",
+      description: "A software development toolkit I created to enhance work efficiency, including VS Code extensions, Docker containers, and GitHub workflows with ChatGPT integration.",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop&crop=entropy",
       technologies: ["VS Code", "Docker", "GitHub", "ChatGPT", "Web Development"],
       achievements: [
-        "เพิ่มประสิทธิภาพการทำงาน 50%",
-        "ลดขั้นตอนการ Deploy",
-        "ระบบทำงานเป็นทีมที่สมบูรณ์"
+        "Increased work efficiency by 50%",
+        "Reduced deployment steps",
+        "Complete team collaboration system"
       ],
       links: {
         github: "#",

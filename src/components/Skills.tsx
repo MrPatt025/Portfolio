@@ -21,34 +21,34 @@ const Skills = () => {
     {
       title: "AI & Machine Learning",
       technologies: ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "ChatGPT"],
-      description: "สร้างโมเดล AI และระบบเรียนรู้ที่ชาญฉลาด"
+      description: "Building intelligent AI models and learning systems"
     },
     {
       title: "Web Development",
       technologies: ["React", "JavaScript", "HTML/CSS", "Node.js", "Full Stack"],
-      description: "พัฒนาเว็บแอปพลิเคชันแบบ Full Stack"
+      description: "Developing Full Stack web applications"
     },
     {
       title: "System Programming",
       technologies: ["C++", "Python", "Docker", "Linux", "System Design"],
-      description: "เขียนโปรแกรมระดับต่ำและระบบประสิทธิภาพสูง"
+      description: "Low-level programming and high-performance systems"
     },
     {
       title: "Development Tools",
       technologies: ["VS Code", "GitHub", "Docker", "ChatGPT", "Git"],
-      description: "เครื่องมือพัฒนาสมัยใหม่สำหรับการทำงานเป็นทีม"
+      description: "Modern development tools for team collaboration"
     }
   ]
 
   const softSkills = [
-    "คิดนอกกรอบ",
-    "ชอบแก้ปัญหา",
-    "ทำงานเป็นระบบ",
-    "เข้าสังคมได้ง่าย",
-    "การทำงานเป็นทีม",
-    "สื่อสารได้ดี",
-    "เรียนรู้อย่างต่อเนื่อง",
-    "ปรับตัวได้ดี"
+    "Think Outside the Box",
+    "Problem Solving",
+    "Systematic Work",
+    "Easy to Socialize",
+    "Team Collaboration",
+    "Effective Communication",
+    "Continuous Learning",
+    "Adaptability"
   ]
 
   return (

@@ -6,33 +6,33 @@ const About = () => {
   const values = [
     {
       icon: Lightbulb,
-      title: "คิดนอกกรอบ",
-      description: "มองหาวิธีแก้ปัญหาที่แปลกใหม่และสร้างสรรค์ เพื่อสร้างโซลูชันที่ไม่เหมือนใคร"
+      title: "Think Outside the Box",
+      description: "Finding innovative and creative solutions to create unique outcomes"
     },
     {
       icon: Target,
-      title: "ชอบแก้ปัญหา",
-      description: "เพลิดเพลินกับการวิเคราะห์และแก้ไขปัญหาที่ซับซ้อน ด้วยความเป็นระบบ"
+      title: "Problem Solving Enthusiast",
+      description: "Enjoying analysis and solving complex problems with systematic approaches"
     },
     {
       icon: Brain,
-      title: "เข้าสังคมได้ง่าย",
-      description: "สามารถทำงานร่วมกับทีมได้ดี สื่อสารได้ชัดเจน และสร้างบรรยากาศการทำงานที่ดี"
+      title: "Easy to Socialize",
+      description: "Able to work well with teams, communicate clearly, and create positive work environments"
     },
     {
       icon: Zap,
-      title: "ทำงานเป็นระบบ",
-      description: "วางแผนและดำเนินงานอย่างมีระเบียบ เน้นประสิทธิภาพและความเสถียร"
+      title: "Systematic Work Style",
+      description: "Planning and executing work methodically, focusing on efficiency and stability"
     },
     {
       icon: Code2,
-      title: "การทำงานเป็นทีม",
-      description: "ร่วมมือกับผู้อื่นได้ดี แบ่งปันความรู้ และสนับสนุนเพื่อนร่วมงาน"
+      title: "Team Collaboration",
+      description: "Collaborating well with others, sharing knowledge, and supporting teammates"
     },
     {
       icon: Heart,
-      title: "สื่อสารได้ดี",
-      description: "ถ่ายทอดไอเดียและแนวคิดเทคนิคได้อย่างเข้าใจง่าย"
+      title: "Effective Communication",
+      description: "Conveying technical ideas and concepts in an easily understandable way"
     }
   ]
 
@@ -65,32 +65,32 @@ const About = () => {
             className="space-y-6"
           >
             <h3 className="text-2xl md:text-3xl font-semibold mb-6">
-              เส้นทางการเรียนรู้
+              Learning Journey
             </h3>
             
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
-                ผมเป็นนักศึกษาวิศวกรรมคอมพิวเตอร์ที่หลงใหลในโลกของ AI และการพัฒนาซอฟต์แวร์ 
-                ด้วยความคิดที่นอกกรอบและรักในการแก้ปัญหา ทำให้ผมมองเห็นโอกาสในการสร้างโซลูชันที่แปลกใหม่
+                I'm a Computer Engineering student passionate about the world of AI and software development. 
+                With out-of-the-box thinking and a love for problem-solving, I see opportunities to create innovative solutions.
               </p>
               
               <p>
-                จากการเขียนโค้ด Python ครั้งแรก จนถึงการพัฒนา AI และ Web Applications ที่ซับซ้อน 
-                ผมเชื่อมั่นในพลังของเทคโนโลยีที่จะเปลี่ยนแปลงโลก โดยเน้นการทำงานเป็นระบบและมีประสิทธิภาพ
+                From writing my first Python code to developing complex AI and Web Applications, 
+                I believe in the power of technology to change the world, focusing on systematic and efficient work approaches.
               </p>
               
               <p>
-                ทักษะหลักของผม ได้แก่ Python, C++, AI/ML, และ Full Stack Development 
-                พร้อมกับการใช้เครื่องมือสมัยใหม่อย่าง Docker, GitHub, VS Code และ ChatGPT
+                My core skills include Python, C++, AI/ML, and Full Stack Development, 
+                along with modern tools like Docker, GitHub, VS Code, and ChatGPT integration.
               </p>
             </div>
 
             <div className="pt-6">
-              <h4 className="text-xl font-semibold mb-4">เป้าหมายในอาชีพ</h4>
+              <h4 className="text-xl font-semibold mb-4">Career Objectives</h4>
               <p className="text-muted-foreground">
-                ผมมองหาโอกาสในตำแหน่ง Software Engineer, AI Engineer หรือ Full Stack Developer 
-                ในสภาพแวดล้อมการทำงานที่ยืดหยุ่น (Remote/Hybrid/On-site) เพื่อสร้างผลกระทบที่มีความหมาย 
-                และเรียนรู้จากทีมงานมืออาชีพ
+                I'm seeking opportunities as a Software Engineer, AI Engineer, or Full Stack Developer 
+                in flexible work environments (Remote/Hybrid/On-site) to create meaningful impact 
+                and learn from professional teams.
               </p>
             </div>
           </motion.div>
