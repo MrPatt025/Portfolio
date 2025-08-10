@@ -1,9 +1,9 @@
 import Navigation from "@/components/Navigation"
-import Hero from "@/components/Hero"
+import Hero3D from "@/components/Hero3D"
 import About from "@/components/About"
-import Skills from "@/components/Skills"
+import Skills3D from "@/components/Skills3D"
 import Experience from "@/components/Experience"
-import Projects from "@/components/Projects"
+import Projects3D from "@/components/Projects3D"
 import Achievements from "@/components/Achievements"
 import Contact from "@/components/Contact"
 import Footer from "@/components/Footer"
@@ -16,11 +16,11 @@ const Index = () => {
       <ScrollProgress />
       <Navigation />
       <main>
-        <Hero />
+        <Hero3D />
         <About />
-        <Skills />
+        <Skills3D />
         <Experience />
-        <Projects />
+        <Projects3D />
         <Achievements />
         <Contact />
       </main>
